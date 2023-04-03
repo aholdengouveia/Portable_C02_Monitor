@@ -1,5 +1,5 @@
 # Portable CO2 Monitor
-This project is making a portable C02 monitor using products from adafruit. 
+This project is making a portable C02 monitor using products from [Adafruit](https://www.adafruit.com/). 
 
 ***Not for use in Commercial Purposes for ANY reason. Do NOT make money off my hard work.***
 
