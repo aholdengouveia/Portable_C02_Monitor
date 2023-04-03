@@ -7,7 +7,7 @@ This project is making a portable C02 monitor using products from adafruit.
 
 ## Links
 
-- GitHub repo link for this site: [https://github.com/aholdengouveia/](https://github.com/aholdengouveia/Portable_C02_Monitor)
+- GitHub repo link for this site: [https://github.com/aholdengouveia/Portable_C02_Monitor](https://github.com/aholdengouveia/Portable_C02_Monitor)
 ## Built With
 - Arduino IDE and C/C++
 
