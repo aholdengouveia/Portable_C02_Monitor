@@ -18,18 +18,16 @@ Adafruit_SH1107 display = Adafruit_SH1107(64, 128, &Wire);
 
 //set a variable for air quality. This will be used for the emoji choice later in the loop  
   float air_quality = 500;
-//  char emoji[] = ":|";
 
 void setup() {
 
 
   //Serial.begin(115200);
-//  while (!Serial) delay(10);     // will pause Zero, Leonardo, etc until serial console opens
-  //Serial.println("128x64 OLED FeatherWing and Adafruit SCD30 test!");
+//  while (!Serial) delay(10);     // will pause Zero, Leonardo, etc until serial console opens leave commented out if you want to make your display portable
+  //Serial.println("128x64 OLED FeatherWing and Adafruit SCD30 test!"); use if you want to test
   delay(250); // wait for the OLED to power up
   display.begin(0x3C, true); // Address 0x3C default
 
-  //Serial.println("OLED begun");
 
 
   // Try to initialize the co2 monitor!
@@ -37,11 +35,7 @@ void setup() {
     display.println("Failed to find SCD30 chip");
     while (1) { delay(10); }
   }
-  //Serial.println("SCD30 Found!");
 
-  //Serial.print("Measurement Interval: "); 
-  //Serial.print(scd30.getMeasurementInterval()); 
-  //Serial.println(" seconds");
 
   // Show image buffer on the display hardware.
   // Since the buffer is intialized with an Adafruit splashscreen
@@ -64,10 +58,6 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(SH110X_WHITE);
   display.setCursor(0,0);
-  //display.print("Connecting to SSID\n'adafruit':");
-  //display.print("connected!");
-  //display.println("IP: 10.0.1.23");
-  //display.println("Sending val #0");
   display.display(); // actually display all of the above
 }
 
@@ -76,7 +66,6 @@ void setup() {
 void loop() {
 
 if (scd30.dataReady()){
-    //Serial.println("Data available!");
 
     if (!scd30.read()){ Serial.println("Error reading sensor data"); return; }
 
@@ -125,7 +114,7 @@ if (scd30.dataReady()){
     display.setCursor(100,50);
     display.setTextSize(2);
 
-
+//if statement to show emoji based on air quality
     if (air_quality <= 700){
         display.print(":D");
 
