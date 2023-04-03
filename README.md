@@ -22,9 +22,9 @@ This project is making a portable C02 monitor using products from adafruit.
 - [Adafruit Feather](https://www.adafruit.com/product/3403)
 - [Adafruit c02 monitor](https://www.adafruit.com/product/4867)
 - [Adafruit OLED featherwing](https://www.adafruit.com/product/4650)
-- [Stemma QT connector to connect C02 monitor to featherwing] (https://www.adafruit.com/product/4210)
+- [Stemma QT connector to connect C02 monitor to featherwing](https://www.adafruit.com/product/4210)
 - [Adafruit battery](https://www.adafruit.com/product/3898)
-- [Case] (https://learn.adafruit.com/3d-printed-case-for-adafruit-feather/parts)
+- [Case](https://learn.adafruit.com/3d-printed-case-for-adafruit-feather/parts)
 - NOTE: you can substitute out other feathers but might need to change the code.  You can also substitute out another C02 monitor like the SCD40 or SCD41, but you would have to change the code.
 
 
