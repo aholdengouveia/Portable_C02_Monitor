@@ -16,6 +16,7 @@ This project is making a portable C02 monitor using products from [Adafruit](htt
 
 ## Files
 - co2withOLED_test_AQI.ino is the file that contains code to show the c02, temp and humidity.  There is also an Air Quality Index (AQI) that is represented by different Emoji. 
+- c02withOLEDwithbuttons.ino will be a version of the code which will have "Air Quality Index" shown with an emoji to indiciate how good the air is. THe buttons will show a larger text version of the actual numbers from the sensor, Button A is C02, Button B is Humidity, and Button C is temp.
 
 
 ## Parts
